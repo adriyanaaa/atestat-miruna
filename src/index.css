@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ts-bg-from: #0a3a6b;
+  --ts-bg-via: #0f5f88;
+  --ts-bg-to: #14b8c9;
+  --ts-accent: #28e0d2;
+  --ts-accent-dark: #0eb8a8;
+  --ts-accent-deep: #07354a;
+  --ts-text: #ffffff;
+  --ts-text-soft: #dffcff;
+  --ts-text-muted: #a5d6dd;
+  --ts-glass: rgba(255, 255, 255, 0.08);
+  --ts-glass-strong: rgba(255, 255, 255, 0.12);
+  --ts-border: rgba(255, 255, 255, 0.12);
+  --ts-shadow: 0 12px 40px rgba(7, 30, 50, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #062340 0%,
+    #0a3a6b 30%,
+    #0f5f88 60%,
+    #14a3b6 100%
+  );
+  background-attachment: fixed;
+  color: var(--ts-text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--ts-accent);
+  color: var(--ts-accent-deep);
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer base {
+  :root {
+    --background: 200 70% 12%;
+    --foreground: 0 0% 98%;
+    --card: 200 60% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 200 60% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 174 75% 52%;
+    --primary-foreground: 200 80% 12%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 200 30% 30%;
+    --muted-foreground: 200 20% 80%;
+    --accent: 174 75% 52%;
+    --accent-foreground: 200 80% 12%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 200 40% 25%;
+    --input: 200 40% 25%;
+    --ring: 174 75% 52%;
+    --radius: 0.5rem;
+  }
+}
